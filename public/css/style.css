@@ -3,7 +3,8 @@ html, body, main, #intro{
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 #intro{
-    background: url('../storage/images/woodland-road-falling-leaf-natural-38537-min.jpeg') no-repeat center center fixed;
+    /* background: url('../storage/images/woodland-road-falling-leaf-natural-38537-min.jpeg') no-repeat center center fixed; */
+    background: url(https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
