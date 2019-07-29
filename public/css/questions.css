@@ -1,0 +1,772 @@
+hmtl,
+
+* {
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+@font-face {
+
+    font-family: 'Racing Sans One';
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    src: local('Racing Sans One'), local('RacingSansOne-Regular'), /*url(http://really-long-url.woff) format('woff');*/
+
+}
+
+@font-face {
+
+    font-family: DeliciousRoman;
+
+    src: url(https://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+
+    font-weight:400;
+
+}
+
+@font-face {
+
+   font-family: sansation;
+
+   src: url(sansation_light.woff);
+
+}
+
+@font-face {
+
+	font-family: 'NothingYouCouldDo1';
+
+	src: url('./fonts/NothingYouCouldDo1.eot');
+
+	src: local('NothingYouCouldDo1'), url('./fonts/NothingYouCouldDo1.woff') format('woff'), url('./fonts/NothingYouCouldDo1.ttf') format('truetype');
+
+}
+
+body {
+
+/*    background: url(../Images/bg.jpg) no-repeat center fixed;*/
+
+/*    background-size: cover;*/
+
+/*    font-family: 'NothingYouCouldDo1';*/
+
+/*    display: flex;*/
+
+}
+
+/*--------------------defaults------------------*/
+.preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.border {
+
+    border: solid;
+
+    border-color: black;
+
+}
+
+.hide {
+
+    display: none;
+
+}
+
+.show {
+
+    display: block;
+
+}
+
+.centerEle {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.centerTag {
+
+    margin-right: auto;
+
+    margin-left: auto;
+
+}
+
+.inline {
+
+    display: inline;
+
+}
+
+.inlineBlock {
+
+    display: inline-block;
+
+}
+
+/*--------------header info------------------*/
+
+.container {
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+/*--------------------form------------------*/
+
+#form {
+
+    position: relative;
+
+    top: 20%;
+
+    vertical-align: middle;
+
+}
+
+/*---------rules----------------*/
+
+
+
+#rules {
+
+    width: 75%;
+
+    height: 70%;
+
+    position: relative;
+
+    top: 5%;
+
+	color:#020202;
+
+	background-color:d7d7d8;
+
+	height:auto;
+
+	margin-bottom:10%;
+
+}
+
+#rules > h2 {
+
+    width: 90%;
+
+    position: relative;
+
+    top: -10%;
+
+    font-size: 28pt;
+
+    color: #e7e7e7;
+
+}
+
+#rules >h4 {
+
+	color:#00f000;
+
+	margin-top:25px;
+
+	
+
+}
+
+
+
+
+
+/*------------game--------*/
+
+#game {
+
+    /*display: none;*/
+
+    position: relative;
+
+}
+
+#bankWrapper {
+
+    position: relative;
+
+}
+
+#gameWrapper {
+
+    position: relative;
+
+}
+
+.wrapper {
+
+    width: 90%;
+
+    height: 80%;
+
+    position: relative;
+
+    top: 5%;
+
+}
+
+.bankWrapper {
+
+    position: relative;
+
+/*
+
+    width: 30%;
+
+    height: 90%;
+
+    left: -2.5%;
+
+*/
+
+}
+
+.moneyTree {
+
+    position: relative;
+
+    width: 30%;
+
+    height: 8%;
+
+    margin-top: 1%;
+
+    top: 1%;
+
+    border-radius: 2.5em / 1.25em;
+
+}
+
+.bank {
+
+    
+
+}
+
+.oval-height{
+
+    height: 5%;
+
+}
+
+.btn.rounded {
+
+  border-radius:30px;
+
+}
+
+.btn.outline {
+
+    background:transparent!important;
+
+}
+
+.btn .small {
+
+  height:34px;
+
+    line-height:34px;
+
+  font-size:14px;
+
+}
+
+.btn.extra-small {
+
+  height:24px;
+
+    line-height:24px;
+
+  font-size:14px;
+
+}
+
+.oval {
+
+    border-radius: 10em / 5em;
+
+    background-color: white;
+
+}
+
+.gameWrapper {
+
+    position: relative;
+
+    width: 60%;
+
+    height: 90%;
+
+}
+
+.backGround{
+
+   background-color: #ffa726!important;
+
+    text-color: black;
+
+}
+
+.moneyTree:nth-child(1) {
+
+    width: 60%;
+
+}
+
+.moneyTree:nth-child(2) {
+
+    width: 53%;
+
+}
+
+.moneyTree:nth-child(3) {
+
+    width: 46%;
+
+}
+
+.moneyTree:nth-child(4) {
+
+    width: 39%;
+
+}
+
+.moneyTree:nth-child(5) {
+
+    width: 35%;
+
+}
+
+.moneyTree:nth-child(6) {
+
+    width: 29%;
+
+}
+
+.moneyTree:nth-child(7) {
+
+    width: 24%;
+
+}
+
+.moneyTree:nth-child(8) {
+
+    width: 20%;
+
+}
+
+.moneyTree:nth-child(9) {
+
+    width: 9%;
+
+}
+
+.fix-height-q {
+
+    height: 30%;
+
+    border-top: 5px solid #e0f2f1;
+
+    border-bottom: 2px solid #e0f2f1;
+
+    font-size: 26pt;
+
+    color: #424242;
+
+}
+
+.fix-height{
+
+    height: 10%;
+
+/*    cursor: pointer;*/
+
+}
+
+.answer1,
+
+.answer2,
+
+.answer3 {
+
+    border-bottom: solid #b3e5fc;
+
+    padding: 25px 25px 25px 25px;
+
+    font-size: 18pt;
+
+    cursor: pointer; 
+
+    color: #212121;
+
+}
+
+/*-----------start and rule buttons-----------*/
+
+#gameControl{
+
+    position: fixed;
+
+    left: 20%;
+
+    bottom: 0px;
+
+    height: 15%;
+
+    width: 60%;
+
+}
+
+.button {
+
+    background-color: #4CAF50; /* Green */
+
+    border: none;
+
+    color: white;
+
+    padding: 16px 32px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+/*    display: inline-block;*/
+
+    font-size: 100%;
+
+    margin: 4px 2px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+
+    transition-duration: 0.4s;
+
+    cursor: pointer;
+
+    font-family: 'NothingYouCouldDo1';
+
+}
+
+/*
+
+.button1 {
+
+    background-color: transparent; 
+
+    color: black; 
+
+    border: 2px solid #4CAF50;
+
+}
+
+.button1:hover {
+
+    background-color: #4CAF50;
+
+    color: white;
+
+}
+
+.button2 {
+
+    background-color: transparent; 
+
+    color: black; 
+
+    border: 2px solid #e7e7e7;
+
+}
+
+.button2:hover {
+
+    background-color: #e7e7e7;
+
+    
+
+}
+
+.button3 {
+
+    background-color: white; 
+
+    color: black; 
+
+    border: 2px solid #f44336;
+
+}
+
+
+
+.button3:hover {
+
+    background-color: #f44336;
+
+    color: white;
+
+}
+
+*/
+
+/*
+
+#start_game {
+
+    position: relative;
+
+    left: -35%;
+
+}
+
+*/
+
+#butt_rules {
+
+    position: relative;
+
+    left: 35%;
+
+}
+
+/*-----------------popup------------------*/
+
+#popup {
+
+    position: absolute;
+
+    width: 90%;
+
+    height: 70%;
+
+    left: 5%;
+
+    top: 15%;
+
+    background-color: burlywood;
+
+    -webkit-animation-duration: 1s;
+
+    animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+
+    animation-fill-mode: both;
+
+    z-index: 2;
+
+}
+
+#popup > div.closeHolder {
+
+    width: 100%;
+
+    height: 8%;
+
+    padding-right: 5px;
+
+    text-align: right;
+
+}
+
+#popup > div > .close {
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+#popup > #messageHeader {
+
+    width: inherit;
+
+    color: chartreuse;
+
+}
+
+.displayInfoWrapper {
+
+    width: 90%;
+
+    height: 80%;
+
+    position: relative;
+
+}
+
+#message {
+
+    width: 40%;
+
+    height: 90%;
+
+    left: 2.5%;
+
+    position: relative;
+
+}
+
+#message > h2 {
+
+    width: 100%;
+
+}
+
+#message > #messageDis {
+
+    width: 100%;
+
+    height: 65%;
+
+    position: relative;
+
+    word-wrap: break-word;
+
+}
+
+.buttonHolder {
+
+    width: 100%;
+
+}
+
+#fact {
+
+    position: absolute;
+
+    width: 55%;
+
+    height: 90%;
+
+    left: 2.5%;
+
+    
+
+}
+
+#fact > h2 {
+
+    width: 100%;
+
+    position: relative;
+
+    top: -2%
+
+}
+
+#fact {
+
+    width: 55%;
+
+    height: 90%;
+
+    left: 2.5%;
+
+    position: relative;
+
+    top: -31%;
+
+}
+
+#fact > #factDis {
+
+    width: 100%;
+
+    height: 70%;
+
+    position: relative;
+
+    word-wrap: break-word;
+
+}
+
+.fadeIn {
+
+    -webkit-animation-name: fadeIn;
+
+    animation-name: fadeIn;
+
+}
+
+@-webkit-keyframes fadeIn {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes fadeIn {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+    @keyframes myMove {
+
+        0% {
+
+            top: 0px;
+
+        }
+
+        25% {
+
+            top: 50px;
+
+        }
+
+        75% {
+
+            top: 100px;
+
+        }
+
+        100% {
+
+            top: 150px;
+
+        }
+
+    }
