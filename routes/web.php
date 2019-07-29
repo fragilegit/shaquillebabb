@@ -14,7 +14,7 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-URL::forceSchema('https');
+// URL::forceSchema('https');
 Route::get('/', 'PagesController@index');
 Route::get('/projects','PagesController@portfolio');
 Route::get('/projects/game','PagesController@site');
